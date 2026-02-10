@@ -24,20 +24,18 @@
     <div id="message"></div>
 
     <script>
-        // Configuration
-        const customText = "rick roll you?";  // <-- Change this text
-        const redirectUrl = "https://youtu.be/dQw4w9WgXcQ"; // <-- Change redirect URL
-        const delay = 2000; // Delay in milliseconds (2000ms = 2 seconds)
+        const customText = "rick roll you?";  // <-- Change this text for the differnet appends
+        const redirectUrl = "https://youtu.be/dQw4w9WgXcQ"; // <-- Change redirect URL for different jokes
+        const delay = 2000;
 
-        // Display the message
         const messageDiv = document.getElementById("message");
         messageDiv.textContent = `Did you really think that I would ${customText}`;
 
-        // Redirect after delay
         setTimeout(() => {
             window.location.href = redirectUrl;
         }, delay);
     </script>
 </body>
 </html>
+
 
