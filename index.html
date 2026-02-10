@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did You Really Think?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        #message {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+
+    <script>
+        // Configuration
+        const customText = "rick roll you?";  // <-- Change this text
+        const redirectUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // <-- Change redirect URL
+        const delay = 2000; // Delay in milliseconds (2000ms = 2 seconds)
+
+        // Display the message
+        const messageDiv = document.getElementById("message");
+        messageDiv.textContent = `Did you really think that I would ${customText}`;
+
+        // Redirect after delay
+        setTimeout(() => {
+            window.location.href = redirectUrl;
+        }, delay);
+    </script>
+</body>
+</html>
